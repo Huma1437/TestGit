@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    app:cardCornerRadius="0dp"
+    card_view:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary_light"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S.No."
+                android:textColor="@color/primary_text"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ques"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/number"
+                android:text="Questions"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/primary_text"
+                android:textSize="15sp"
+                android:justificationMode="inter_word"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/marks"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="5dp"
+                android:text=""
+                android:maxLength="3"
+                android:inputType="number"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:textCursorDrawable="@drawable/mycursor"
+                android:background="@drawable/black_btn_border"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="right|center_vertical"
+                android:textColor="@color/primary_text"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lscarp4.lscarpl4assessments">
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Always required on api < 21, needed to keep a wake lock while your job is running -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- Required on api < 21 if you are using setRequiredNetworkType(int) -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Required on all api levels if you are using setPersisted(true) -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!--
+           android:requestLegacyExternalStorage="true" [Becoz to access directories from the device!
+        In Android API 29 and above you can use the below code to store files, images and videos to external storage.]
+        -->
+        <activity
+            android:name=".AssessorFiles.Update_Batch_Status"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AssessorFiles.VivaExam"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AssessorFiles.View_Details"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AssessorFiles.Assessor_Contact"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AssessorFiles.Batches_Completed"
+            android:screenOrientation="fullSensor"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".AssessorFiles.Batches_Assessed"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.OtpScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.Enrollment_Form"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity android:name=".StudentFiles.FeedbackForm"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            tools:ignore="LockedOrientationActivity"></activity>
+        <activity
+            android:name=".AssessorFiles.AssessorProfile"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AssessorFiles.AssessorDashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AssessorFiles.Assessor_Login"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.Contact"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.ReadingMaterial"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.Profile"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.Test_Main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.Main_Exam"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.Login"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StudentFiles.Splash_Screen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver> <!-- Define your service, make sure to add the permision! -->
+        <service
+            android:name=".NetworkSchedulerService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+</manifest>

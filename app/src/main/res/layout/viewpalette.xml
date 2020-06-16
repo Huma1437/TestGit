@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/ans">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="INSTRUCTIONS"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/primary_text"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/EditBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ed1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cir1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/green_circle"
+                        android:text=""
+                        android:gravity="center"
+                        android:shadowColor="@color/transparent"
+                        android:shadowRadius="10.0"
+                        android:padding="2dp"
+                        android:textColor="@color/icons"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Answered"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@color/primary_text"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ed2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cir2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/grey_circle"
+                        android:text=""
+                        android:gravity="center"
+                        android:shadowColor="@color/transparent"
+                        android:shadowRadius="10.0"
+                        android:padding="2dp"
+                        android:textColor="@color/icons"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not Visited"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@color/primary_text"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ed3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cir3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/red_circle"
+                        android:text=""
+                        android:gravity="center"
+                        android:shadowColor="@color/transparent"
+                        android:shadowRadius="10.0"
+                        android:padding="2dp"
+                        android:textColor="@color/icons"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not Answered"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@color/primary_text"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ed4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cir4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/purple_circle"
+                        android:text=""
+                        android:gravity="center"
+                        android:shadowColor="@color/transparent"
+                        android:shadowRadius="10.0"
+                        android:padding="2dp"
+                        android:textColor="@color/icons"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Review Later"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="@color/primary_text"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+        <!--<View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="@color/secondary_text"/>-->
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/primary_text"
+                    android:text="Answered"/>
+
+
+                <TextView
+                    android:id="@+id/get_ans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primary_text"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:background="@color/secondary_text"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Marked"
+                    android:textColor="@color/primary_text"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/get_marked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primary_text"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:background="@color/secondary_text"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:textColor="@color/primary_text"
+                    android:text="Not Attend"/>
+
+
+                <TextView
+                    android:id="@+id/get_notattend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primary_text"
+                    android:text=""/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/ans">
+
+            <TextView
+                android:id="@+id/Test_topic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Questions Palette"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/primary_text"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:columnWidth="70dp"
+            android:numColumns="5"
+            android:textColor="@color/icons"
+            android:verticalSpacing="24dp"
+            android:horizontalSpacing="8dp"
+            android:layout_margin="5dp"
+            android:stretchMode="spacingWidthUniform"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

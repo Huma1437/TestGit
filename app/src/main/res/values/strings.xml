@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">LSC ARPL4 Assessments</string>
+
+    <string name="ALLinone">Allow LSC ARPL4 Assessments to access following permissions : \n \u0020 \n
+      <b>Media Files</b> \n \u0020 \u2022  read from external storage \n \u0020 \u2022  write to external storage \n\u0020 \n
+      <b>Network/Internet</b> \n \u0020 \u2022  access information about Wi-Fi networks \n \u0020 \n   </string>
+
+
+    <string name="permission_necessary">Necessary Permissions</string>
+    <string name="storage_permission_is_encessary_to_write_event">Without these permissions, the app is unable to successfully complete authentication. Please allow us to access your device so that we can better serve you.</string>
+
+
+    <!--Personal Details [Making fields mandatory] -->
+    <string name="fname">First Name <font color='red'>*</font></string>
+    <string name="lname">Last Name <font color='red'>*</font></string>
+    <string name="adname">Name as per Aadhar <font color='red'>*</font></string>
+    <string name="gender">Gender<font color='red'>*</font></string>
+    <string name="dob">Date of Birth <font color='red'>*</font></string>
+    <string name="maritalS">Marital Status <font color='red'>*</font></string>
+    <string name="age">Age(years)<font color='red'>*</font></string>
+    <string name="mob">Mobile No.<font color='red'>*</font></string>
+    <string name="altnum">Alt.Phone No.<font color='red'>*</font></string>
+    <string name="email">Email ID<font color='red'>*</font></string>
+    <string name="Aadharnum">Aadhar Card No.<font color='red'>*</font></string>
+    <string name="adharpic">Upload Aadhar<font color='red'>*</font></string>
+
+    <!--Address Details [Current Address] -->
+    <string name="dnum">Door Number <font color='red'>*</font></string>
+    <string name="sname">Street Name<font color='red'>*</font></string>
+    <string name="village">Village/City<font color='red'>*</font></string>
+    <string name="dist">District<font color='red'>*</font></string>
+    <string name="state">State<font color='red'>*</font></string>
+    <string name="pincode">Pincode<font color='red'>*</font></string>
+
+    <!--Permanent Address -->
+    <string name="pdnum">Door Number <font color='red'>*</font></string>
+    <string name="psname">Street Name<font color='red'>*</font></string>
+    <string name="pvillage">Village/City<font color='red'>*</font></string>
+    <string name="pdist">District<font color='red'>*</font></string>
+    <string name="pstate">State<font color='red'>*</font></string>
+    <string name="ppincode">Pincode<font color='red'>*</font></string>
+
+    <!--Family Details -->
+    <string name="fathername">Father\'s Name <font color='red'>*</font></string>
+    <string name="mothername">Mother\'s Name<font color='red'>*</font></string>
+    <string name="foccu">Father\'s Occupation <font color='red'>*</font></string>
+    <string name="moccu">Mother\'s Occupation<font color='red'>*</font></string>
+    <string name="fcontact">Father\'s Contact Number<font color='red'>*</font></string>
+    <string name="fincome">Family Income<font color='red'>*</font></string>
+    <string name="religion">Religion<font color='red'>*</font></string>
+
+    <!--Guardians Details -->
+    <!-- <string name="gname">Guardian\'s Name<font color='red'>*</font></string>
+    <string name="rship">Relationship<font color='red'>*</font></string>
+    <string name="goccu">Occupation <font color='red'>*</font></string>
+    <string name="gnum">Guardian\'s Contact Number<font color='red'>*</font></string>-->
+    <string name="cat">Category<font color='red'>*</font></string>
+    <string name="caste">Caste<font color='red'>*</font></string>
+
+    <!-- Educational Details-->
+    <string name="eq">Educational Qualification<font color='red'>*</font></string>
+    <string name="poy">Pass Out Year<font color='red'>*</font></string>
+    <string name="inst">Institution<font color='red'>*</font></string>
+    <string name="marks">% Marks Obtained<font color='red'>*</font></string>
+
+    <!-- Work Experience-->
+    <string name="exp">Experience in Years<font color='red'>*</font></string>
+    <string name="cemp">Current Employer<font color='red'>*</font></string>
+    <string name="empadd">Employer Address<font color='red'>*</font></string>
+
+    <!-- Bank Account Details-->
+    <string name="acntnum">Account Number<font color='red'>*</font></string>
+    <string name="bank">Bank<font color='red'>*</font></string>
+    <string name="branch">Branch<font color='red'>*</font></string>
+    <string name="ifsc">IFSC Code<font color='red'>*</font></string>
+
+
+    <string name="comment">Write Your Comment...</string>
+
+
+</resources>

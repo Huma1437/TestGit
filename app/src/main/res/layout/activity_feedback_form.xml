@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/icons"
+    tools:context=".StudentFiles.FeedbackForm">
+
+    <include layout="@layout/header" />
+
+<!-- Main Layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- layout containing recyclerview to display questions with options -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/icons">
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+                <TextView
+                    android:id="@+id/emptyElement"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="No Data Available"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmntBoxLayout"
+            android:orientation="vertical">
+
+            <EditText android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:textColor="@color/primary_text"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_border"
+                android:hint="@string/comment" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_btn_border"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:text="Close"
+                android:textColor="@color/primary_text" />
+
+
+            <Button
+                android:id="@+id/commentbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_btn_border"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:text="Click to Comment"
+                android:textColor="@color/primary_text" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/black_btn_border"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_margin="10dp"
+                android:text="Submit Feedback"
+                android:textColor="@color/primary_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

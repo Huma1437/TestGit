@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    app:cardCornerRadius="0dp"
+    android:background="@color/icons"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/EditBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/options_border"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/ques"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_toRightOf="@+id/quesNum"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:justificationMode="inter_word"/>
+
+
+        <RadioGroup
+            android:id="@+id/rdg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:clickable="true"
+                android:id="@+id/op1"
+                android:buttonTint="@color/s_bg"
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:clickable="true"
+                android:id="@+id/op2"
+                android:buttonTint="@color/s_bg"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:clickable="true"
+                android:id="@+id/op3"
+                android:buttonTint="@color/s_bg"
+                android:checked="false"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:clickable="true"
+                android:id="@+id/op4"
+                android:buttonTint="@color/s_bg"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:text=""
+                android:textColor="@color/primary_text"
+                android:clickable="true"
+                android:id="@+id/op5"
+                android:buttonTint="@color/s_bg"
+                android:checked="false"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
